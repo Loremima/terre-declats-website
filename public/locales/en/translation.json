@@ -1,0 +1,87 @@
+{
+    "navbar": {
+        "about": "About",
+        "treatments": "Treatments",
+        "contact": "Contact",
+        "bookNow": "Book Now"
+    },
+    "hero": {
+        "subtitle": "Holistic Beauty Treatments",
+        "title": "We've Got Your Glow",
+        "button": "Find Your Treatment"
+    },
+    "about": {
+        "pageTitle": "My Journey to Radiance",
+        "p1": "The quiet introspection of lockdown became my moment of revelation: I found my true calling in the art of well-being 🌱. This pivotal time led me not only to deeper self-discovery but also to sharing my passion, culminating in the publication of my book on natural wellness in February.",
+        "p2": "My journey began with formal training in aesthetics (CAP Esthétique), but my thirst for knowledge never ceased. I pursued specialized certifications, becoming a facialist adept in Hydrafacial treatments and mastering the Renata França lymphatic drainage technique. These skills, combined with extensive training in Kobido facial massage, allow me to offer truly bespoke and effective treatments.",
+        "p3": "Currently, I am furthering my expertise by studying naturopathy, aiming to provide a comprehensive, holistic approach to support your long-term well-being.",
+        "quote": "My own path, marked by questions of self-acceptance, has shaped a unique philosophy of care. I profoundly believe in the transformative power of beauty rituals and dedicated self-care for women.",
+        "p4": "It is this conviction that fuels my mission, leading to the opening of my own sanctuary in September 2024 – an institute exclusively for women, focusing on lymphatic drainage and the harmonious balance of body and mind.",
+        "p5": "Welcome to my space, dedicated to natural radiance and holistic well-being, where expertise meets personalized care. My approach blends ancestral wisdom with modern techniques to offer you a unique experience of relaxation and innate beauty. ✨"
+    },
+    "services": {
+        "welcome": "Welcome to Terre d'eclats",
+        "sectionTitle": "WE'VE GOT YOUR GLOW",
+        "intro": "Nestled in the heart of Notting Hill, London, our award-winning studio specializes in personalized, high-performance facials, body treatments, and massage, designed to deliver visible results and deep rejuvenation.",
+        "card1": {
+            "title": "BODY TREATMENTS",
+            "description": "Experience our rejuvenating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness.",
+            "button": "See Treatments"
+        },
+        "card2": {
+            "title": "FACIALS",
+            "description": "Our bespoke facials blend expert techniques and natural products to cleanse, sculpt, and rejuvenate your skin for a radiant glow.",
+            "button": "See Treatments"
+        },
+        "card3": {
+            "title": "MASSAGE",
+            "description": "Indulge in our sculpting face massages, expertly designed to lift, tone, and relax, leaving you refreshed and revitalized.",
+            "button": "See Treatments"
+        }
+    },
+    "glow_era": {
+        "title": "IT'S TIME TO ENTER YOUR GLOW ERA",
+        "intro": "Reclaim your glow! Our award-winning studio in Notting Hill offers personalized deep-cleansing facials, sculpting face massage and cosmetic acupuncture by expert facialists. We combine powerful techniques with natural products to leave you glowing, refreshed, and rejuvenated.",
+        "button": "Book a Treatment"
+    },
+    "bestsellers": {
+        "title": "OUR BESTSELLERS",
+        "item1": {
+            "name": "Signature Hydrafacial",
+            "desc": "Our signature hydrafacial combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        },
+        "item2": {
+            "name": "Age Defying Facial",
+            "desc": "Our signature age defying facial combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        },
+        "item3": {
+            "name": "Gua Sha Super Lift",
+            "desc": "Our signature gua sha super lift combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        },
+        "item4": {
+            "name": "Body Lift and Sculpt",
+            "desc": "Our signature body lift and sculpt combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        },
+        "item5": {
+            "name": "Buccal Massage",
+            "desc": "Our signature buccal massage combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        },
+        "learnMore": "Learn More",
+        "viewAll": "View All Treatments"
+    },
+    "footer": {
+        "copyright": "© {{year}} Terre d'éclats. All rights reserved.",
+        "credit": "Made with love ❤️ by Don Lorenzo.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    },
+    "legal": {
+        "privacyTitle": "Privacy Policy",
+        "termsTitle": "Terms of Service",
+        "lastUpdated": "Last Updated: {{date}}",
+        "placeholderPrivacy": "[Content for your Privacy Policy goes here. Please consult legal resources or generators...]",
+        "placeholderTerms": "[Content for your Terms of Service goes here. Please consult legal resources or generators...]",
+        "contactPrompt": "If you have questions about this policy, please contact us at:",
+        "genericDisclaimer": "**Disclaimer:** This is a generic template... Please consult with a legal professional."
+    }
+}

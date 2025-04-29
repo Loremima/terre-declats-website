@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const TermsOfServicePage: React.FC = () => {
+    const { t } = useTranslation();
+    const currentDate = new Date().toLocaleDateString();
 
     // Basic animation for page load
     const pageVariants = {
@@ -18,12 +21,14 @@ const TermsOfServicePage: React.FC = () => {
         >
             <div className="container mx-auto px-4 lg:px-12">
                 <h1 className="font-serif text-4xl md:text-5xl mb-8 md:mb-12">
-                    Terms of Service
+                    {t('legal.termsTitle')}
                 </h1>
                 <div className="prose prose-lg max-w-none font-light text-sm md:text-base leading-relaxed space-y-4">
-                    <p className="font-medium mb-4">Last Updated: 26-04-2025</p>
+                    <p className="font-medium mb-4">
+                        {t('legal.lastUpdated', { date: currentDate })}
+                    </p>
 
-                    <p>Welcome to the Terre d'éclats website. By accessing and using this website, you agree to comply with and be bound by the following terms and conditions of use.</p>
+                    <p>Welcome to the Terres d'éclats website. By accessing and using this website, you agree to comply with and be bound by the following terms and conditions of use.</p>
 
                     <h2 className="text-xl md:text-2xl font-serif mt-6 mb-3 !font-normal">Use of Website</h2>
                     <p>This website is provided for your general information and use only. It is subject to change without notice. Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</p>
@@ -46,7 +51,9 @@ const TermsOfServicePage: React.FC = () => {
                     <h2 className="text-xl md:text-2xl font-serif mt-6 mb-3 !font-normal">Contact Us</h2>
                     <p>If you have questions about these Terms of Service, please contact us at: [Insert Contact Email Address]</p>
 
-                    <p className="mt-6 italic font-medium">**Disclaimer:** This is a generic template. Please adapt it to your specific services and consult with a legal professional.</p>
+                    <p className="mt-6 italic font-medium">
+                        {t('legal.genericDisclaimer')}
+                    </p>
                 </div>
             </div>
         </motion.div>

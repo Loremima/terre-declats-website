@@ -1,0 +1,87 @@
+{
+    "navbar": {
+        "about": "À Propos",
+        "treatments": "Soins",
+        "contact": "Contact",
+        "bookNow": "Réserver"
+    },
+    "hero": {
+        "subtitle": "Soins de Beauté Holistiques",
+        "title": "Révélez Votre Éclat",
+        "button": "Trouver Votre Soin"
+    },
+    "about": {
+        "pageTitle": "Mon Chemin vers l'Éclat",
+        "p1": "C'est pendant le confinement que j'ai découvert ma véritable vocation : le bien-être 🌱. Cette période a marqué un tournant dans ma vie, me poussant à aller plus loin et à publier, en février, un livre sur le bien-être naturel.",
+        "p2": "Mon parcours a commencé avec un CAP esthétique, puis je n'ai cessé de me former pour enrichir mes compétences. Facialiste, je me suis spécialisée dans les soins hydrafacial et j'ai obtenu ma certification en drainage lymphatique RENATA FRANCA. Ces pratiques, associées à ma formation approfondie en massage facial Kobido, me permettent d'offrir des soins adaptés et performants.",
+        "p3": "Aujourd'hui, je poursuis une formation en naturopathie pour compléter mon approche et vous accompagner sur le long terme vers un bien-être global.",
+        "quote": "Mon histoire, jalonnée de questionnements sur l'acceptation de soi, m'a permis de créer une approche unique du soin. Je suis profondément convaincue que la beauté et les soins peuvent transformer la vie des femmes.",
+        "p4": "C'est cette conviction qui m'a conduite à ouvrir, en septembre 2024, mon institut dédié exclusivement aux femmes, centré sur le drainage lymphatique et l'harmonisation du corps et de l'esprit.",
+        "p5": "Je vous accueille dans mon espace dédié au bien-être naturel, où je mets mon expertise au service de soins personnalisés. Mon approche holistique s'appuie sur des techniques ancestrales et modernes pour vous offrir une expérience unique de relaxation et de beauté naturelle. ✨"
+    },
+    "services": {
+        "welcome": "Bienvenue chez Terre d'éclats",
+        "sectionTitle": "VOUS AVEZ LE GLOW, NOUS L'ENTRETENONS",
+        "intro": "Au cœur de Notting Hill, notre studio primé vous ouvre les portes d'un cocon de bien-être. Spécialisé dans les soins personnalisés haute performance – soins du visage, traitements corporels et massages – notre mission est simple : révéler votre éclat naturel, en profondeur et avec douceur.",
+        "card1": {
+            "title": "TRAITEMENTS CORPORELS",
+            "description": "Offrez à votre corps une pause régénérante. Nos soins sur-mesure détoxifient, nourrissent et rééquilibrent pour une sensation de légèreté et de vitalité retrouvée.",
+            "button": "Voir les soins"
+        },
+        "card2": {
+            "title": "SOINS DU VISAGE",
+            "description": "Nettoyer, sculpter, illuminer. Nos soins visage associent gestes experts et actifs naturels pour redonner vie à votre peau et sublimer son éclat.",
+            "button": "Voir les soins"
+        },
+        "card3": {
+            "title": "MASSAGES",
+            "description": "Fermez les yeux, respirez... Nos massages du visage et du corps sont pensés pour détendre profondément, lifter en douceur et recharger vos batteries, dans un écrin de sérénité.",
+            "button": "Voir les soins"
+        }
+    },
+    "glow_era": {
+        "title": "Bienvenue dans votre ère du glow",
+        "intro": "Notre studio primé situé au cœur de Notting Hill est bien plus qu'un institut : c'est un havre de sérénité. Nous proposons des soins sur-mesure — nettoyage profond, massages sculptants, acupuncture esthétique — réalisés par des expertes passionnées. Grâce à l'alliance de techniques pointues et d'ingrédients naturels, vous ressortez rayonnant·e, ressourcé·e et totalement rééquilibré·e.",
+        "button": "Réserver un Soin"
+    },
+    "bestsellers": {
+        "title": "NOS INCONTOURNABLES",
+        "item1": {
+            "name": "Hydrafacial Signature",
+            "desc": "Un soin coup d'éclat qui nettoie, hydrate et revitalise en profondeur — l'alliance parfaite entre technologie et naturel."
+        },
+        "item2": {
+            "name": "Soin Anti-Âge Signature",
+            "desc": "Redonnez à votre peau toute sa jeunesse grâce à un soin liftant, lissant et lumineux, adapté à vos besoins."
+        },
+        "item3": {
+            "name": "Gua Sha Super Lift",
+            "desc": "Inspiré de la tradition, ce soin raffermit et sculpte le visage pour un effet liftant immédiat, tout en douceur."
+        },
+        "item4": {
+            "name": "Lift & Sculpt du Corps",
+            "desc": "Un massage profond qui détend, stimule la circulation et redéfinit la silhouette avec précision et bienveillance."
+        },
+        "item5": {
+            "name": "Massage Buccal",
+            "desc": "Une technique rare et ciblée, pratiquée à l'intérieur de la bouche pour relâcher les tensions, sublimer les traits et réveiller l'éclat."
+        },
+        "learnMore": "En savoir plus",
+        "viewAll": "Voir tous les soins"
+    },
+    "footer": {
+        "copyright": "© {{year}} Terre d'éclats. Tous droits réservés.",
+        "credit": "Fait avec amour ❤️ par Don Lorenzo.",
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation"
+    },
+    "legal": {
+        "privacyTitle": "Politique de confidentialité",
+        "termsTitle": "Conditions d'utilisation",
+        "lastUpdated": "Dernière mise à jour : {{date}}",
+        "placeholderPrivacy": "[Le contenu de votre Politique de confidentialité vient ici. Veuillez consulter des ressources juridiques...]",
+        "placeholderTerms": "[Le contenu de vos Conditions d'utilisation vient ici. Veuillez consulter des ressources juridiques...]",
+        "contactPrompt": "Si vous avez des questions sur cette politique, merci de nous contacter à :",
+        "genericDisclaimer": "**Avertissement :** Ceci est un modèle générique... Veuillez consulter un professionnel du droit."
+    }
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -60,14 +63,14 @@ const Hero: React.FC = () => {
           className="text-white/70 font-light mb-8 text-base uppercase tracking-[0.3em]"
           variants={textVariants}
         >
-          Holistic Beauty Treatments
+          {t('hero.subtitle')}
         </motion.h2>
 
         <motion.h1
           className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-14 leading-tight tracking-wide italic"
           variants={textVariants}
         >
-          We've Got Your Glow
+          {t('hero.title')}
         </motion.h1>
 
         <motion.div variants={buttonVariants}>
@@ -78,7 +81,7 @@ const Hero: React.FC = () => {
             offset={-50}
             className="bg-white/60 hover:bg-white/70 border border-white/40 px-10 py-3 font-light text-sm uppercase tracking-wider rounded-full transition-all duration-300 cursor-pointer inline-block"
           >
-            Find Your Treatment
+            {t('hero.button')}
           </Link>
         </motion.div>
       </motion.div>

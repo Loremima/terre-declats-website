@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { ServiceProps } from '../types';
+import { useTranslation } from 'react-i18next';
 
 const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl }) => {
+  const { t } = useTranslation();
   return (
     <div className="border border-black flex flex-col items-center max-w-sm mx-auto h-full bg-[#f6f1e7]">
       <div className="w-full aspect-square overflow-hidden p-4 border-black">
@@ -27,7 +29,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl }) =
 
         <div className="mt-auto flex justify-center">
           <Button variant="secondary" className="border-black text-black hover:bg-black hover:text-white">
-            See Treatments
+            {t('services.card1.button')}
           </Button>
         </div>
       </div>
@@ -36,20 +38,22 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl }) =
 };
 
 const ServicesSection: React.FC = () => {
+  const { t } = useTranslation();
+
   const services = [
     {
-      title: 'BODY TREATMENTS',
-      description: 'Experience our rejuvenating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness.',
+      title: t('services.card1.title'),
+      description: t('services.card1.description'),
       imageUrl: '/images/body-treatments.jpg'
     },
     {
-      title: 'FACIALS',
-      description: 'Our bespoke facials blend expert techniques and natural products to cleanse, sculpt, and rejuvenate your skin for a radiant glow.',
+      title: t('services.card2.title'),
+      description: t('services.card2.description'),
       imageUrl: '/images/facials.jpg'
     },
     {
-      title: 'MASSAGE',
-      description: 'Indulge in our sculpting face massages, expertly designed to lift, tone, and relax, leaving you refreshed and revitalized.',
+      title: t('services.card3.title'),
+      description: t('services.card3.description'),
       imageUrl: '/images/massage.jpg'
     }
   ];
@@ -77,17 +81,15 @@ const ServicesSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <div id="welcome-section" className="text-center py-16">
           <h2 className="font-light text-black mb-3 uppercase tracking-[0.3em] text-sm">
-            Welcome to Terre d'eclats
+            {t('services.welcome')}
           </h2>
 
           <h3 className="font-serif text-3xl md:text-4xl text-black mb-8 tracking-wide">
-            WE'VE GOT YOUR GLOW
+            {t('services.sectionTitle')}
           </h3>
 
           <p className="text-black max-w-2xl mx-auto font-light">
-            Nestled in the heart of Notting Hill, London, our award-winning studio specializes in
-            personalized, high-performance facials, body treatments, and massage, designed to
-            deliver visible results and deep rejuvenation.
+            {t('services.intro')}
           </p>
         </div>
 

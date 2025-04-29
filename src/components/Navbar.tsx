@@ -3,8 +3,10 @@ import { Instagram, X } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Navbar: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -55,6 +57,11 @@ const Navbar: React.FC = () => {
 
   const useDarkElements = scrolled || location.pathname !== '/';
 
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    toggleMenu();
+  };
+
   return (
     <>
       <nav className={`w-full fixed top-0 left-0 z-50 transition-all duration-500 ${scrolled
@@ -78,7 +85,7 @@ const Navbar: React.FC = () => {
               to="/"
               onClick={() => isMenuOpen && toggleMenu()}
             >
-              <h1 className={`font-serif text-xl md:text-2xl transition-colors duration-500 ${useDarkElements ? 'text-black' : 'text-white'}`}>TERRE D'ÉCLATS</h1>
+              <h1 className={`font-serif text-xl md:text-2xl transition-colors duration-500 ${useDarkElements ? 'text-black' : 'text-white'}`}>TERRES D'ÉCLAT</h1>
             </RouterLink>
           </div>
 
@@ -98,7 +105,7 @@ const Navbar: React.FC = () => {
               rel="noopener noreferrer"
               className={`hidden md:inline-block px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-light uppercase tracking-wider md:tracking-widest transition-all duration-300 ${useDarkElements ? 'bg-black text-white hover:bg-gray-800' : 'bg-white text-black hover:bg-white/90'}`}
             >
-              Book Now
+              {t('navbar.bookNow')}
             </a>
           </div>
         </div>
@@ -135,7 +142,7 @@ const Navbar: React.FC = () => {
                   className={overlayLinkClasses + " cursor-pointer"}
                   onClick={toggleMenu}
                 >
-                  About
+                  {t('navbar.about')}
                 </RouterLink>
               </motion.div>
               <motion.div variants={linkItemVariants}>
@@ -147,7 +154,7 @@ const Navbar: React.FC = () => {
                   className={overlayLinkClasses + " cursor-pointer"}
                   onClick={toggleMenu}
                 >
-                  Treatments
+                  {t('navbar.treatments')}
                 </ScrollLink>
               </motion.div>
               <motion.div variants={linkItemVariants}>
@@ -159,7 +166,7 @@ const Navbar: React.FC = () => {
                   className={overlayLinkClasses + " cursor-pointer"}
                   onClick={toggleMenu}
                 >
-                  Contact
+                  {t('navbar.contact')}
                 </ScrollLink>
               </motion.div>
               <motion.div variants={linkItemVariants}>
@@ -170,9 +177,29 @@ const Navbar: React.FC = () => {
                   className={`mt-4 px-7 py-2.5 rounded-full text-base bg-white/20 text-white hover:bg-white/30 transition-colors duration-300 uppercase tracking-[0.2em] font-light inline-block`}
                   onClick={toggleMenu}
                 >
-                  Book Now
+                  {t('navbar.bookNow')}
                 </a>
               </motion.div>
+
+              <motion.div
+                variants={linkItemVariants}
+                className="flex items-center space-x-3 pt-8"
+              >
+                <button
+                  onClick={() => changeLanguage('en')}
+                  className={`uppercase text-xs font-light transition-opacity duration-300 ${i18n.language === 'en' ? 'text-white' : 'text-white/50 hover:opacity-75'}`}
+                >
+                  EN
+                </button>
+                <span className="text-white/50">|</span>
+                <button
+                  onClick={() => changeLanguage('fr')}
+                  className={`uppercase text-xs font-light transition-opacity duration-300 ${i18n.language === 'fr' ? 'text-white' : 'text-white/50 hover:opacity-75'}`}
+                >
+                  FR
+                </button>
+              </motion.div>
+
             </motion.div>
           </motion.div>
         )}

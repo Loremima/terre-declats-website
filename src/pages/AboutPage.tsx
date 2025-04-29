@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 // Optional: Import a simplified Footer if needed, or rely on the global one if implemented
 
 const AboutPage: React.FC = () => {
+    const { t } = useTranslation();
 
     // Animation for the content container
     const pageVariants = {
@@ -39,7 +41,7 @@ const AboutPage: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
                 >
-                    My Journey to Radiance
+                    {t('about.pageTitle')}
                 </motion.h1>
 
                 {/* Grid: Image Left, Text Right on Desktop */}
@@ -67,25 +69,25 @@ const AboutPage: React.FC = () => {
                             animate="visible"
                         >
                             <motion.p variants={paragraphVariants} className="italic">
-                                The quiet introspection of lockdown became my moment of revelation: I found my true calling in the art of well-being 🌱. This pivotal time led me not only to deeper self-discovery but also to sharing my passion, culminating in the publication of my book on natural wellness in February.
+                                {t('about.p1')}
                             </motion.p>
                             <motion.p variants={paragraphVariants}>
-                                My journey began with formal training in aesthetics (CAP Esthétique), but my thirst for knowledge never ceased. I pursued specialized certifications, becoming a facialist adept in Hydrafacial treatments and mastering the Renata França lymphatic drainage technique. These skills, combined with extensive training in Kobido facial massage, allow me to offer truly bespoke and effective treatments.
+                                {t('about.p2')}
                             </motion.p>
                             <motion.p variants={paragraphVariants}>
-                                Currently, I am furthering my expertise by studying naturopathy, aiming to provide a comprehensive, holistic approach to support your long-term well-being.
+                                {t('about.p3')}
                             </motion.p>
                             <motion.blockquote
                                 className="border-l-2 border-black/40 pl-6 py-2 my-8 italic text-black/80"
                                 variants={paragraphVariants} // Animate it like a paragraph
                             >
-                                My own path, marked by questions of self-acceptance, has shaped a unique philosophy of care. I profoundly believe in the transformative power of beauty rituals and dedicated self-care for women.
+                                {t('about.quote')}
                             </motion.blockquote>
                             <motion.p variants={paragraphVariants}>
-                                It is this conviction that fuels my mission, leading to the opening of my own sanctuary in September 2024 – an institute exclusively for women, focusing on lymphatic drainage and the harmonious balance of body and mind.
+                                {t('about.p4')}
                             </motion.p>
                             <motion.p variants={paragraphVariants} className="pt-4 font-medium">
-                                Welcome to my space, dedicated to natural radiance and holistic well-being, where expertise meets personalized care. My approach blends ancestral wisdom with modern techniques to offer you a unique experience of relaxation and innate beauty. ✨
+                                {t('about.p5')}
                             </motion.p>
                         </motion.div>
                     </div>

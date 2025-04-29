@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from './Button';
+import { useTranslation } from 'react-i18next';
 
 const GlowEraSection: React.FC = () => {
+  const { t } = useTranslation();
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 15 },
@@ -28,14 +29,11 @@ const GlowEraSection: React.FC = () => {
         <div className="flex items-center justify-center bg-[#f6f1e7] p-8 md:p-16 border-t border-black order-1 md:order-1">
           <div className="max-w-md text-center">
             <h2 className="font-serif text-3xl md:text-4xl text-black mb-6 leading-tight tracking-wide">
-              IT'S TIME TO ENTER YOUR GLOW ERA
+              {t('glow_era.title')}
             </h2>
 
             <p className="text-black mb-8 leading-relaxed font-light">
-              Reclaim your glow! Our award-winning studio in Notting Hill offers personalized
-              deep-cleansing facials, sculpting face massage and cosmetic acupuncture by
-              expert facialists. We combine powerful techniques with natural products to leave
-              you glowing, refreshed, and rejuvenated.
+              {t('glow_era.intro')}
             </p>
 
             <div className="flex justify-center">
@@ -45,7 +43,7 @@ const GlowEraSection: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 rounded-full text-sm bg-black text-white hover:bg-gray-800 transition-all duration-300 uppercase tracking-wider font-light"
               >
-                Book a Treatment
+                {t('glow_era.button')}
               </a>
             </div>
           </div>

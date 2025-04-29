@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { TreatmentProps } from '../types';
+import { useTranslation } from 'react-i18next';
 
-const TreatmentItem: React.FC<TreatmentProps> = ({ name, expanded = false, onClick }) => {
+interface TranslatedTreatmentProps extends TreatmentProps {
+  t: (key: string) => string;
+  itemKey: string;
+}
+
+const TreatmentItem: React.FC<TranslatedTreatmentProps> = ({ name, expanded = false, onClick, t, itemKey }) => {
   return (
     <div
       className="py-5 border-b border-black cursor-pointer group"
@@ -20,10 +26,11 @@ const TreatmentItem: React.FC<TreatmentProps> = ({ name, expanded = false, onCli
 
       {expanded && (
         <div className="pt-4 text-black text-sm animate-fadeIn">
-          <p className="font-light">Our signature {name.toLowerCase()} combines advanced techniques with natural ingredients
-            for remarkable results. Experience the difference with our expert practitioners.</p>
+          <p className="font-light">{t(`${itemKey}.desc`)}</p>
           <div className="mt-4">
-            <Button variant="secondary" className="text-xs px-4 py-1.5">Learn More</Button>
+            <Button variant="secondary" className="text-xs px-4 py-1.5">
+              {t('bestsellers.learnMore')}
+            </Button>
           </div>
         </div>
       )}
@@ -32,14 +39,15 @@ const TreatmentItem: React.FC<TreatmentProps> = ({ name, expanded = false, onCli
 };
 
 const BestsellersSection: React.FC = () => {
+  const { t } = useTranslation();
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const treatments = [
-    "Signature Hydrafacial",
-    "Age Defying Facial",
-    "Gua Sha Super Lift",
-    "Body Lift and Sculpt",
-    "Buccal Massage"
+    { key: "item1", name: t('bestsellers.item1.name') },
+    { key: "item2", name: t('bestsellers.item2.name') },
+    { key: "item3", name: t('bestsellers.item3.name') },
+    { key: "item4", name: t('bestsellers.item4.name') },
+    { key: "item5", name: t('bestsellers.item5.name') },
   ];
 
   const handleClick = (index: number) => {
@@ -78,22 +86,24 @@ const BestsellersSection: React.FC = () => {
         <div className="flex items-center justify-center p-8 md:p-16 bg-[#f6f1e7] order-1 md:order-2">
           <div className="max-w-md w-full">
             <h2 className="font-serif text-3xl text-black mb-10 tracking-wide text-center">
-              OUR BESTSELLERS
+              {t('bestsellers.title')}
             </h2>
 
             <div className="mb-10">
               {treatments.map((treatment, index) => (
                 <TreatmentItem
                   key={index}
-                  name={treatment}
+                  name={treatment.name}
                   expanded={expandedIndex === index}
                   onClick={() => handleClick(index)}
+                  t={t}
+                  itemKey={`bestsellers.${treatment.key}`}
                 />
               ))}
             </div>
 
             <Button className="w-full justify-center border-black text-black hover:bg-black hover:text-white">
-              View All Treatments
+              {t('bestsellers.viewAll')}
             </Button>
           </div>
         </div>

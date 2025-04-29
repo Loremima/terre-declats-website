@@ -120,11 +120,11 @@ const Navbar: React.FC = () => {
             animate="visible"
             exit="exit"
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed inset-0 z-[60] bg-black/70 backdrop-blur-2xl flex flex-col items-center justify-center"
+            className="fixed inset-0 z-[60] bg-black/80 backdrop-blur-3xl flex flex-col items-center justify-center"
           >
             <button
               onClick={toggleMenu}
-              className="absolute top-5 right-5 md:top-8 md:right-8 text-white hover:opacity-75 transition-opacity duration-300 z-[61]"
+              className="absolute top-5 left-5 md:top-8 md:left-8 text-white hover:opacity-75 transition-opacity duration-300 z-[61]"
               aria-label="Close menu"
             >
               <X size={28} />
@@ -136,6 +136,30 @@ const Navbar: React.FC = () => {
               initial="hidden"
               animate="visible"
             >
+              <motion.div
+                variants={linkItemVariants}
+              >
+                <div className="bg-white/10 p-1 rounded-full flex items-center space-x-1">
+                  <button
+                    onClick={() => changeLanguage('en')}
+                    className={`uppercase text-xs font-light rounded-full px-3 py-1 transition-colors duration-300 
+                      ${i18n.language === 'en'
+                        ? 'bg-white text-black'
+                        : 'text-white/70 hover:bg-white/5'}`}
+                  >
+                    EN
+                  </button>
+                  <button
+                    onClick={() => changeLanguage('fr')}
+                    className={`uppercase text-xs font-light rounded-full px-3 py-1 transition-colors duration-300 
+                      ${i18n.language === 'fr'
+                        ? 'bg-white text-black'
+                        : 'text-white/70 hover:bg-white/5'}`}
+                  >
+                    FR
+                  </button>
+                </div>
+              </motion.div>
               <motion.div variants={linkItemVariants}>
                 <RouterLink
                   to="/about"
@@ -150,7 +174,7 @@ const Navbar: React.FC = () => {
                   to="welcome-section"
                   smooth={true}
                   duration={1000}
-                  offset={-80}
+                  offset={-50}
                   className={overlayLinkClasses + " cursor-pointer"}
                   onClick={toggleMenu}
                 >
@@ -158,46 +182,25 @@ const Navbar: React.FC = () => {
                 </ScrollLink>
               </motion.div>
               <motion.div variants={linkItemVariants}>
-                <ScrollLink
-                  to="contact-section"
-                  smooth={true}
-                  duration={1000}
-                  offset={0}
+                <RouterLink
+                  to="/contact"
                   className={overlayLinkClasses + " cursor-pointer"}
                   onClick={toggleMenu}
                 >
                   {t('navbar.contact')}
-                </ScrollLink>
+                </RouterLink>
               </motion.div>
+
               <motion.div variants={linkItemVariants}>
                 <a
                   href="https://calendly.com/terresdeclat"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-4 px-7 py-2.5 rounded-full text-base bg-white/20 text-white hover:bg-white/30 transition-colors duration-300 uppercase tracking-[0.2em] font-light inline-block`}
+                  className={`px-7 py-2.5 rounded-full text-base bg-white/20 text-white hover:bg-white/30 transition-colors duration-300 uppercase tracking-[0.2em] font-light inline-block`}
                   onClick={toggleMenu}
                 >
                   {t('navbar.bookNow')}
                 </a>
-              </motion.div>
-
-              <motion.div
-                variants={linkItemVariants}
-                className="flex items-center space-x-3 pt-8"
-              >
-                <button
-                  onClick={() => changeLanguage('en')}
-                  className={`uppercase text-xs font-light transition-opacity duration-300 ${i18n.language === 'en' ? 'text-white' : 'text-white/50 hover:opacity-75'}`}
-                >
-                  EN
-                </button>
-                <span className="text-white/50">|</span>
-                <button
-                  onClick={() => changeLanguage('fr')}
-                  className={`uppercase text-xs font-light transition-opacity duration-300 ${i18n.language === 'fr' ? 'text-white' : 'text-white/50 hover:opacity-75'}`}
-                >
-                  FR
-                </button>
               </motion.div>
 
             </motion.div>

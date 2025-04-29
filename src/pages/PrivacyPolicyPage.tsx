@@ -28,7 +28,7 @@ const PrivacyPolicyPage: React.FC = () => {
                         {t('legal.lastUpdated', { date: currentDate })}
                     </p>
 
-                    <p>Welcome to Terres d'éclats. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use our services, including appointment booking via Calendly.</p>
+                    <p>Welcome to Terres d'éclat. We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and use our services, including appointment booking via Calendly.</p>
 
                     <h2 className="text-xl md:text-2xl font-serif mt-6 mb-3 !font-normal">Information We Collect</h2>
                     <p>We may collect personal information that you voluntarily provide to us when you book an appointment or interact with our website. This may include:</p>

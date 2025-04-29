@@ -3,9 +3,13 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import { ServiceProps } from '../types';
 import { useTranslation } from 'react-i18next';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
-const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl }) => {
-  const { t } = useTranslation();
+const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl, buttonText, linkTo, scrollToId, externalUrl }) => {
+  const buttonClasses = "border-black text-black hover:bg-black hover:text-white";
+  const buttonBaseClasses = "font-light text-sm uppercase tracking-wider py-2 px-6 rounded-full transition-all duration-300 border";
+
   return (
     <div className="border border-black flex flex-col items-center max-w-sm mx-auto h-full bg-[#f6f1e7]">
       <div className="w-full aspect-square overflow-hidden p-4 border-black">
@@ -16,21 +20,48 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl }) =
         />
       </div>
 
-      <div className="p-6 flex flex-col flex-grow">
-        <div className="text-center">
-          <h3 className="font-serif text-xl text-black mb-3 tracking-wide">
-            {title}
-          </h3>
-        </div>
-
-        <p className="text-black text-center mb-6 text-sm leading-relaxed font-light">
+      <div className="p-6 flex flex-col flex-grow text-center">
+        <h3 className="font-serif text-xl text-black mb-3 tracking-wide">
+          {title}
+        </h3>
+        <p className="text-black text-sm leading-relaxed font-light mb-6">
           {description}
         </p>
 
-        <div className="mt-auto flex justify-center">
-          <Button variant="secondary" className="border-black text-black hover:bg-black hover:text-white">
-            {t('services.card1.button')}
-          </Button>
+        <div className="mt-auto pt-4 flex justify-center">
+          {
+            scrollToId ? (
+              <ScrollLink
+                to={scrollToId}
+                smooth={true}
+                duration={1000}
+                offset={-80}
+                className={`${buttonBaseClasses} ${buttonClasses} cursor-pointer`}
+              >
+                {buttonText}
+              </ScrollLink>
+            ) : externalUrl ? (
+              <a
+                href={externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${buttonBaseClasses} ${buttonClasses}`}
+              >
+                {buttonText}
+              </a>
+            ) : linkTo ? (
+              <RouterLink
+                to={linkTo}
+                className={`${buttonBaseClasses} ${buttonClasses}`}
+              >
+                {buttonText}
+              </RouterLink>
+            ) : (
+              <span className={`${buttonBaseClasses} ${buttonClasses} opacity-50 cursor-not-allowed`}>
+                {buttonText}
+              </span>
+            )
+          }
         </div>
       </div>
     </div>
@@ -42,19 +73,19 @@ const ServicesSection: React.FC = () => {
 
   const services = [
     {
-      title: t('services.card1.title'),
-      description: t('services.card1.description'),
-      imageUrl: '/images/body-treatments.jpg'
+      key: 'cardIndividual',
+      imageUrl: '/images/facials.jpg',
+      scrollToId: 'bestsellers-section'
     },
     {
-      title: t('services.card2.title'),
-      description: t('services.card2.description'),
-      imageUrl: '/images/facials.jpg'
+      key: 'cardHolistic',
+      imageUrl: '/images/body-treatments.jpg',
+      externalUrl: 'https://calendly.com/terresdeclat'
     },
     {
-      title: t('services.card3.title'),
-      description: t('services.card3.description'),
-      imageUrl: '/images/massage.jpg'
+      key: 'cardProfessional',
+      imageUrl: '/images/massage.jpg',
+      linkTo: '/contact'
     }
   ];
 
@@ -94,12 +125,16 @@ const ServicesSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-16">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
+              key={service.key}
+              title={t(`services.${service.key}.title`)}
+              description={t(`services.${service.key}.description`)}
+              buttonText={t(`services.${service.key}.button`)}
               imageUrl={service.imageUrl}
+              linkTo={service.linkTo}
+              scrollToId={service.scrollToId}
+              externalUrl={service.externalUrl}
             />
           ))}
         </div>

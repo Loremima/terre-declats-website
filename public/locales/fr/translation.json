@@ -6,8 +6,8 @@
         "bookNow": "Réserver"
     },
     "hero": {
-        "subtitle": "Soins de Beauté Holistiques",
-        "title": "Révélez Votre Éclat",
+        "subtitle": "Un retour à l'essentiel",
+        "title": "Sublimez Votre Peau",
         "button": "Trouver Votre Soin"
     },
     "about": {
@@ -17,35 +17,35 @@
         "p3": "Aujourd'hui, je poursuis une formation en naturopathie pour compléter mon approche et vous accompagner sur le long terme vers un bien-être global.",
         "quote": "Mon histoire, jalonnée de questionnements sur l'acceptation de soi, m'a permis de créer une approche unique du soin. Je suis profondément convaincue que la beauté et les soins peuvent transformer la vie des femmes.",
         "p4": "C'est cette conviction qui m'a conduite à ouvrir, en septembre 2024, mon institut dédié exclusivement aux femmes, centré sur le drainage lymphatique et l'harmonisation du corps et de l'esprit.",
-        "p5": "Je vous accueille dans mon espace dédié au bien-être naturel, où je mets mon expertise au service de soins personnalisés. Mon approche holistique s'appuie sur des techniques ancestrales et modernes pour vous offrir une expérience unique de relaxation et de beauté naturelle. ✨"
+        "p5": "Bienvenue dans mon espace, dédié à la redécouverte de votre éclat naturel et de votre bien-être holistique. Reconnectons-nous à votre essentiel grâce à une expertise et des soins personnalisés, alliant sagesse ancestrale et techniques modernes pour une expérience unique. ✨"
     },
     "services": {
-        "welcome": "Bienvenue chez Terre d'éclats",
-        "sectionTitle": "VOUS AVEZ LE GLOW, NOUS L'ENTRETENONS",
-        "intro": "Au cœur de Notting Hill, notre studio primé vous ouvre les portes d'un cocon de bien-être. Spécialisé dans les soins personnalisés haute performance – soins du visage, traitements corporels et massages – notre mission est simple : révéler votre éclat naturel, en profondeur et avec douceur.",
-        "card1": {
-            "title": "TRAITEMENTS CORPORELS",
-            "description": "Offrez à votre corps une pause régénérante. Nos soins sur-mesure détoxifient, nourrissent et rééquilibrent pour une sensation de légèreté et de vitalité retrouvée.",
-            "button": "Voir les soins"
+        "welcome": "Terres d'éclat : Un retour à l'essentiel",
+        "sectionTitle": "RÉVÉLEZ VOTRE ÉCLAT",
+        "intro": "Entrez dans un sanctuaire dédié à votre éclat et à la reconnexion à soi. Notre espace est spécialisé dans les soins personnalisés haute performance conçus pour offrir des résultats visibles et une profonde régénération.",
+        "cardIndividual": {
+            "title": "Soins Personnalisés",
+            "description": "Soin Kobido signature, drainage lymphatique, coaching skincare sur-mesure, cours d'auto-massage... Révélez votre éclat unique grâce à nos accompagnements personnalisés.",
+            "button": "Explorer les Soins"
         },
-        "card2": {
-            "title": "SOINS DU VISAGE",
-            "description": "Nettoyer, sculpter, illuminer. Nos soins visage associent gestes experts et actifs naturels pour redonner vie à votre peau et sublimer son éclat.",
-            "button": "Voir les soins"
+        "cardProfessional": {
+            "title": "Services Professionnels",
+            "description": "Valorisez votre marque ou établissement. Ateliers bien-être, formation d'équipes, événements pop-up, création de soins signatures pour hôtels, spas et entreprises.",
+            "button": "Discuter d'un Projet"
         },
-        "card3": {
-            "title": "MASSAGES",
-            "description": "Fermez les yeux, respirez... Nos massages du visage et du corps sont pensés pour détendre profondément, lifter en douceur et recharger vos batteries, dans un écrin de sérénité.",
-            "button": "Voir les soins"
+        "cardHolistic": {
+            "title": "Consultations Sur-Mesure",
+            "description": "Recevez des conseils d'experte conçus pour vous. Obtenez routines de soins, recommandations produits et astuces personnalisées pour atteindre vos objectifs peau.",
+            "button": "Réserver une Consultation"
         }
     },
     "glow_era": {
         "title": "Bienvenue dans votre ère du glow",
-        "intro": "Notre studio primé situé au cœur de Notting Hill est bien plus qu'un institut : c'est un havre de sérénité. Nous proposons des soins sur-mesure — nettoyage profond, massages sculptants, acupuncture esthétique — réalisés par des expertes passionnées. Grâce à l'alliance de techniques pointues et d'ingrédients naturels, vous ressortez rayonnant·e, ressourcé·e et totalement rééquilibré·e.",
+        "intro": "Il est temps de révéler votre éclat intérieur et de vous reconnecter à vous-même ! Notre cocon propose des soins personnalisés par des mains expertes, alliant techniques pointues et produits naturels pour vous laisser rayonnant·e, ressourcé·e et rééquilibré·e.",
         "button": "Réserver un Soin"
     },
     "bestsellers": {
-        "title": "NOS INCONTOURNABLES",
+        "title": "NOS SOINS SIGNATURES",
         "item1": {
             "name": "Hydrafacial Signature",
             "desc": "Un soin coup d'éclat qui nettoie, hydrate et revitalise en profondeur — l'alliance parfaite entre technologie et naturel."
@@ -66,12 +66,33 @@
             "name": "Massage Buccal",
             "desc": "Une technique rare et ciblée, pratiquée à l'intérieur de la bouche pour relâcher les tensions, sublimer les traits et réveiller l'éclat."
         },
-        "learnMore": "En savoir plus",
-        "viewAll": "Voir tous les soins"
+        "itemKobido": {
+            "name": "Soin Liftant Kobido",
+            "desc": "Redessinez l'ovale de votre visage avec ce lifting naturel. Un massage japonais ancestral qui draine, lisse et revitalise pour une relaxation profonde et un éclat visible."
+        },
+        "itemDrainage": {
+            "name": "Drainage Harmonie du Corps",
+            "desc": "Retrouvez légèreté et bien-être. Ce drainage spécifique relance la circulation lymphatique, diminue la rétention d'eau, soulage les ballonnements et apaise le stress. *Avis médical requis si pathologie.*"
+        },
+        "itemCourse": {
+            "name": "Masterclass Auto-Massage Visage (Visio)",
+            "desc": "Révélez le potentiel de votre peau chez vous ! Apprenez des gestes d'auto-massage personnalisés inspirés du Kobido et du drainage lymphatique (session visio 45min)."
+        },
+        "itemRoutine": {
+            "name": "Votre Rituel Beauté Sur-Mesure",
+            "desc": "Ne cherchez plus, rayonnez. Recevez votre routine de soins complète et personnalisée, adaptée à votre peau et votre rythme de vie (visio-consultation 30€)."
+        },
+        "itemShopping": {
+            "name": "Coaching Glow Up : Rituel + Shopping",
+            "desc": "Le coaching ultime pour transformer votre peau ! Analyse pointue, routine personnalisée, sélection de produits adaptés (budget respecté !), et gestes d'application maîtrisés. (1h - 45€)"
+        },
+        "learnMore": "Réserver",
+        "viewAll": "Voir Tous les Services"
     },
     "footer": {
-        "copyright": "© {{year}} Terre d'éclats. Tous droits réservés.",
-        "credit": "Fait avec amour ❤️ par Don Lorenzo.",
+        "copyright": "© {{year}} Terres d'éclats. Tous droits réservés.",
+        "slogan": "Révélez votre éclat. Un retour à l'essentiel.",
+        "credit": "Made with Love ❤️ By Don Lorenzo.",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
     },
@@ -83,5 +104,15 @@
         "placeholderTerms": "[Le contenu de vos Conditions d'utilisation vient ici. Veuillez consulter des ressources juridiques...]",
         "contactPrompt": "Si vous avez des questions sur cette politique, merci de nous contacter à :",
         "genericDisclaimer": "**Avertissement :** Ceci est un modèle générique... Veuillez consulter un professionnel du droit."
+    },
+    "contactPage": {
+        "title": "Contactez-Moi",
+        "intro": "Une question, une idée de projet, ou simplement envie de dire bonjour ? J'adorerais échanger avec vous. Contactez-moi par email ou retrouvez-moi sur Instagram.",
+        "emailCardTitle": "Par Email",
+        "emailPrompt": "Envoyez votre message directement à :",
+        "emailAddress": "terresdeclat@gmail.com",
+        "instagramCardTitle": "Sur Instagram",
+        "instagramPrompt": "Retrouvez l'inspiration et les nouveautés :",
+        "instagramHandle": "@terresdeclat_"
     }
 }

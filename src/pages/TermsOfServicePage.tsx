@@ -28,7 +28,7 @@ const TermsOfServicePage: React.FC = () => {
                         {t('legal.lastUpdated', { date: currentDate })}
                     </p>
 
-                    <p>Welcome to the Terres d'éclats website. By accessing and using this website, you agree to comply with and be bound by the following terms and conditions of use.</p>
+                    <p>Welcome to the Terres d'éclat website. By accessing and using this website, you agree to comply with and be bound by the following terms and conditions of use.</p>
 
                     <h2 className="text-xl md:text-2xl font-serif mt-6 mb-3 !font-normal">Use of Website</h2>
                     <p>This website is provided for your general information and use only. It is subject to change without notice. Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</p>

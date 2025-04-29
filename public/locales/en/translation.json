@@ -6,7 +6,7 @@
         "bookNow": "Book Now"
     },
     "hero": {
-        "subtitle": "Holistic Beauty Treatments",
+        "subtitle": "A Return to Self",
         "title": "We've Got Your Glow",
         "button": "Find Your Treatment"
     },
@@ -17,60 +17,61 @@
         "p3": "Currently, I am furthering my expertise by studying naturopathy, aiming to provide a comprehensive, holistic approach to support your long-term well-being.",
         "quote": "My own path, marked by questions of self-acceptance, has shaped a unique philosophy of care. I profoundly believe in the transformative power of beauty rituals and dedicated self-care for women.",
         "p4": "It is this conviction that fuels my mission, leading to the opening of my own sanctuary in September 2024 – an institute exclusively for women, focusing on lymphatic drainage and the harmonious balance of body and mind.",
-        "p5": "Welcome to my space, dedicated to natural radiance and holistic well-being, where expertise meets personalized care. My approach blends ancestral wisdom with modern techniques to offer you a unique experience of relaxation and innate beauty. ✨"
+        "p5": "Welcome to my space, dedicated to rediscovering your natural radiance and holistic well-being. Let's reconnect with your essential self through expertise and personalized care, blending ancestral wisdom with modern techniques for a unique experience. ✨"
     },
     "services": {
-        "welcome": "Welcome to Terre d'eclats",
+        "welcome": "Terres d'éclat: A Return to the Essential",
         "sectionTitle": "WE'VE GOT YOUR GLOW",
-        "intro": "Nestled in the heart of Notting Hill, London, our award-winning studio specializes in personalized, high-performance facials, body treatments, and massage, designed to deliver visible results and deep rejuvenation.",
-        "card1": {
-            "title": "BODY TREATMENTS",
-            "description": "Experience our rejuvenating body treatments, tailored to detoxify, nourish, and restore balance for total body wellness.",
-            "button": "See Treatments"
+        "intro": "Step into a sanctuary dedicated to your radiance and reconnection. Our studio specializes in personalized, high-performance treatments designed to deliver visible results and deep rejuvenation.",
+        "cardIndividual": {
+            "title": "Personalized Treatments",
+            "description": "From signature Kobido facials and lymphatic drainage to bespoke skincare coaching and self-massage classes, unlock your unique glow with tailor-made treatments.",
+            "button": "Explore Treatments"
         },
-        "card2": {
-            "title": "FACIALS",
-            "description": "Our bespoke facials blend expert techniques and natural products to cleanse, sculpt, and rejuvenate your skin for a radiant glow.",
-            "button": "See Treatments"
+        "cardProfessional": {
+            "title": "Professional Services",
+            "description": "Elevate your brand or venue. Offering bespoke workshops, staff training, pop-up wellness events, and signature treatment creation for hotels, spas, and businesses.",
+            "button": "Discuss a Project"
         },
-        "card3": {
-            "title": "MASSAGE",
-            "description": "Indulge in our sculpting face massages, expertly designed to lift, tone, and relax, leaving you refreshed and revitalized.",
-            "button": "See Treatments"
+        "cardHolistic": {
+            "title": "Personalized Consultations",
+            "description": "Receive expert guidance tailored to you. Get bespoke skincare routines, product recommendations, and self-care advice to achieve your skin goals.",
+            "button": "Book a Consultation"
         }
     },
     "glow_era": {
         "title": "IT'S TIME TO ENTER YOUR GLOW ERA",
-        "intro": "Reclaim your glow! Our award-winning studio in Notting Hill offers personalized deep-cleansing facials, sculpting face massage and cosmetic acupuncture by expert facialists. We combine powerful techniques with natural products to leave you glowing, refreshed, and rejuvenated.",
+        "intro": "It's time to reveal your inner glow and reconnect with yourself! Our haven offers personalized treatments by expert hands, combining powerful techniques with natural products to leave you glowing, refreshed, and rejuvenated.",
         "button": "Book a Treatment"
     },
     "bestsellers": {
-        "title": "OUR BESTSELLERS",
-        "item1": {
-            "name": "Signature Hydrafacial",
-            "desc": "Our signature hydrafacial combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        "title": "OUR MOST LOVED TREATMENTS",
+        "itemKobido": {
+            "name": "KobidoSculpt Facial",
+            "desc": "Rediscover youthful contours with this natural facelift massage. Ancient Japanese techniques lift, drain, and revitalize for deep relaxation and visible radiance."
         },
-        "item2": {
-            "name": "Age Defying Facial",
-            "desc": "Our signature age defying facial combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        "itemDrainage": {
+            "name": "Body Harmony Drainage",
+            "desc": "Feel lighter and refreshed. This specialized massage boosts lymphatic flow to reduce water retention, ease bloating, and melt away stress. *Consult your doctor for specific health conditions.*"
         },
-        "item3": {
-            "name": "Gua Sha Super Lift",
-            "desc": "Our signature gua sha super lift combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        "itemCourse": {
+            "name": "Virtual Facial Massage Masterclass",
+            "desc": "Unlock your skin's potential from home! Learn personalized self-massage techniques inspired by Kobido and lymphatic drainage in a 45-min video session."
         },
-        "item4": {
-            "name": "Body Lift and Sculpt",
-            "desc": "Our signature body lift and sculpt combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        "itemRoutine": {
+            "name": "Your Personalized Skin Ritual",
+            "desc": "Stop guessing, start glowing. Get a complete, tailor-made skincare routine designed for your unique skin and lifestyle via a 30€ video consultation."
         },
-        "item5": {
-            "name": "Buccal Massage",
-            "desc": "Our signature buccal massage combines advanced techniques with natural ingredients for remarkable results. Experience the difference with our expert practitioners."
+        "itemShopping": {
+            "name": "Glow Up: Ritual + Shopping Guide",
+            "desc": "The ultimate skin transformation package! Includes in-depth analysis, bespoke routine, curated product picks (budget-friendly!), and application mastery. (1h - 45€)"
         },
-        "learnMore": "Learn More",
-        "viewAll": "View All Treatments"
+        "learnMore": "Book Now",
+        "viewAll": "View All Services"
     },
     "footer": {
-        "copyright": "© {{year}} Terre d'éclats. All rights reserved.",
+        "copyright": "© {{year}} Terres d'éclats. All rights reserved.",
+        "slogan": "Reveal Your Radiance. A Return to Self.",
         "credit": "Made with love ❤️ by Don Lorenzo.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
@@ -83,5 +84,15 @@
         "placeholderTerms": "[Content for your Terms of Service goes here. Please consult legal resources or generators...]",
         "contactPrompt": "If you have questions about this policy, please contact us at:",
         "genericDisclaimer": "**Disclaimer:** This is a generic template... Please consult with a legal professional."
+    },
+    "contactPage": {
+        "title": "Get In Touch",
+        "intro": "Have a question, a project idea, or just want to say hello? I'd love to hear from you. Reach out via email or connect on Instagram.",
+        "emailCardTitle": "By Email",
+        "emailPrompt": "Send your message directly to:",
+        "emailAddress": "terresdeclat@gmail.com",
+        "instagramCardTitle": "On Instagram",
+        "instagramPrompt": "Find inspiration and updates:",
+        "instagramHandle": "@terresdeclat_"
     }
 }

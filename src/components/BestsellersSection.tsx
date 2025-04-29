@@ -4,12 +4,7 @@ import Button from './Button';
 import { TreatmentProps } from '../types';
 import { useTranslation } from 'react-i18next';
 
-interface TranslatedTreatmentProps extends TreatmentProps {
-  t: (key: string) => string;
-  itemKey: string;
-}
-
-const TreatmentItem: React.FC<TranslatedTreatmentProps> = ({ name, expanded = false, onClick, t, itemKey }) => {
+const TreatmentItem: React.FC<TreatmentProps> = ({ name, description, learnMoreText, bookingUrl, expanded = false, onClick }) => {
   return (
     <div
       className="py-5 border-b border-black cursor-pointer group"
@@ -25,12 +20,23 @@ const TreatmentItem: React.FC<TranslatedTreatmentProps> = ({ name, expanded = fa
       </div>
 
       {expanded && (
-        <div className="pt-4 text-black text-sm animate-fadeIn">
-          <p className="font-light">{t(`${itemKey}.desc`)}</p>
-          <div className="mt-4">
-            <Button variant="secondary" className="text-xs px-4 py-1.5">
-              {t('bestsellers.learnMore')}
-            </Button>
+        <div className="pt-4 text-black text-sm animate-fadeIn text-center">
+          <p className="font-light">{description || `Default description for ${name}`}</p>
+          <div className="mt-4 flex justify-center">
+            {bookingUrl ? (
+              <a
+                href={bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-block font-light uppercase tracking-wider rounded-full transition-all duration-300 border text-xs py-1.5 px-4 bg-transparent border-black text-black hover:bg-gray-100`}
+              >
+                {learnMoreText || "Book Now"}
+              </a>
+            ) : (
+              <Button variant="secondary" size="sm">
+                {learnMoreText || "Learn More"}
+              </Button>
+            )}
           </div>
         </div>
       )}
@@ -43,12 +49,20 @@ const BestsellersSection: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const treatments = [
-    { key: "item1", name: t('bestsellers.item1.name') },
-    { key: "item2", name: t('bestsellers.item2.name') },
-    { key: "item3", name: t('bestsellers.item3.name') },
-    { key: "item4", name: t('bestsellers.item4.name') },
-    { key: "item5", name: t('bestsellers.item5.name') },
+    { key: 'itemKobido' },
+    { key: 'itemDrainage' },
+    { key: 'itemCourse' },
+    { key: 'itemRoutine' },
+    { key: 'itemShopping' },
   ];
+
+  const bookingUrls: { [key: string]: string } = {
+    itemKobido: "https://calendly.com/terresdeclat/massage-facial-kobido",
+    itemDrainage: "https://calendly.com/terresdeclat/drainage-lymphatique-corps-120",
+    itemCourse: "https://calendly.com/terresdeclat/cours-de-massage-facial-visio",
+    itemRoutine: "https://calendly.com/terresdeclat/bilan-skincare-routine-personnalisee",
+    itemShopping: "https://calendly.com/terresdeclat/nouvelle-reunion"
+  };
 
   const handleClick = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -84,7 +98,7 @@ const BestsellersSection: React.FC = () => {
         </div>
 
         <div className="flex items-center justify-center p-8 md:p-16 bg-[#f6f1e7] order-1 md:order-2">
-          <div className="max-w-md w-full">
+          <div className="max-w-md w-full h-full flex flex-col justify-center">
             <h2 className="font-serif text-3xl text-black mb-10 tracking-wide text-center">
               {t('bestsellers.title')}
             </h2>
@@ -93,18 +107,15 @@ const BestsellersSection: React.FC = () => {
               {treatments.map((treatment, index) => (
                 <TreatmentItem
                   key={index}
-                  name={treatment.name}
+                  name={t(`bestsellers.${treatment.key}.name`)}
+                  description={t(`bestsellers.${treatment.key}.desc`)}
+                  learnMoreText={t('bestsellers.learnMore')}
+                  bookingUrl={bookingUrls[treatment.key]}
                   expanded={expandedIndex === index}
                   onClick={() => handleClick(index)}
-                  t={t}
-                  itemKey={`bestsellers.${treatment.key}`}
                 />
               ))}
             </div>
-
-            <Button className="w-full justify-center border-black text-black hover:bg-black hover:text-white">
-              {t('bestsellers.viewAll')}
-            </Button>
           </div>
         </div>
       </div>

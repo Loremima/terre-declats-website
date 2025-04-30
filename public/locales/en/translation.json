@@ -12,12 +12,12 @@
     },
     "about": {
         "pageTitle": "My Journey to Radiance",
-        "p1": "The quiet introspection of lockdown became my moment of revelation: I found my true calling in the art of well-being 🌱. This pivotal time led me not only to deeper self-discovery but also to sharing my passion, culminating in the publication of my book on natural wellness in February.",
-        "p2": "My journey began with formal training in aesthetics (CAP Esthétique), but my thirst for knowledge never ceased. I pursued specialized certifications, becoming a facialist adept in Hydrafacial treatments and mastering the Renata França lymphatic drainage technique. These skills, combined with extensive training in Kobido facial massage, allow me to offer truly bespoke and effective treatments.",
-        "p3": "Currently, I am furthering my expertise by studying naturopathy, aiming to provide a comprehensive, holistic approach to support your long-term well-being.",
-        "quote": "My own path, marked by questions of self-acceptance, has shaped a unique philosophy of care. I profoundly believe in the transformative power of beauty rituals and dedicated self-care for women.",
-        "p4": "It is this conviction that fuels my mission, leading to the opening of my own sanctuary in September 2024 – an institute exclusively for women, focusing on lymphatic drainage and the harmonious balance of body and mind.",
-        "p5": "Welcome to my space, dedicated to rediscovering your natural radiance and holistic well-being. Let's reconnect with your essential self through expertise and personalized care, blending ancestral wisdom with modern techniques for a unique experience. ✨"
+        "p1": "I am a facialist, lymphatic drainage practitioner, and skincare coach, but above all, I am a woman who has walked a path of reconciliation with herself. When I was younger, I was self-conscious about my skin and thought I had to scrub it raw to be accepted. That period left a deep mark on me. 🪞",
+        "p2": "Over time, I realized that true beauty isn't found in the eyes of others, but in the alignment between who we are inside and what we express on the outside. Beauty is a reconnection with oneself—a truth you embody without masks or pretenses. 🧘🏿‍♀️",
+        "p3": "Today, I am guided by a holistic approach, both spiritual and rooted in body care. I support those who want to rediscover a beauty that feels right for them, that heals, that liberates. My role is to help you care for your skin, your energy, and your being, so you can feel fully yourself—aligned and radiant. 🌸",
+        "quote": "",
+        "p4": "",
+        "p5": ""
     },
     "services": {
         "welcome": "Terres d'éclat: A Return to the Essential",
@@ -70,9 +70,9 @@
         "viewAll": "View All Services"
     },
     "footer": {
-        "copyright": "© {{year}} Terres d'éclats. All rights reserved.",
+        "copyright": "© {{year}} Terres d'éclat. All rights reserved.",
         "slogan": "Reveal Your Radiance. A Return to Self.",
-        "credit": "Made with love ❤️ by Don Lorenzo.",
+        "credit": "Made with love 🤎 by Don Lorenzo.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service"
     },

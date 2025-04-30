@@ -157,7 +157,38 @@ const Navbar: React.FC = () => {
                   >
                     FR
                   </button>
+                  <button
+                    onClick={() => changeLanguage('pt')}
+                    className={`uppercase text-xs font-light rounded-full px-3 py-1 transition-colors duration-300 
+                      ${i18n.language === 'pt'
+                        ? 'bg-white text-black'
+                        : 'text-white/70 hover:bg-white/5'}`}
+                  >
+                    PT
+                  </button>
                 </div>
+              </motion.div>
+              <motion.div variants={linkItemVariants}>
+                {location.pathname === '/' ? (
+                  <ScrollLink
+                    to="top"
+                    smooth={true}
+                    duration={800}
+                    offset={-80}
+                    className={overlayLinkClasses + " cursor-pointer"}
+                    onClick={toggleMenu}
+                  >
+                    Terres d'éclat
+                  </ScrollLink>
+                ) : (
+                  <RouterLink
+                    to="/"
+                    className={overlayLinkClasses + " cursor-pointer"}
+                    onClick={toggleMenu}
+                  >
+                    Terres d'éclat
+                  </RouterLink>
+                )}
               </motion.div>
               <motion.div variants={linkItemVariants}>
                 <RouterLink

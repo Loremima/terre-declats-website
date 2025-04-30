@@ -3,20 +3,27 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 @layer base {
   html {
     font-family: 'Inter', sans-serif;
     @apply text-gray-800;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Cormorant Garamond', serif;
   }
-  
+
   body {
     @apply overflow-x-hidden;
   }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -44,6 +51,7 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -77,6 +85,7 @@
     opacity: 0;
     transform: translateY(-5px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -87,13 +96,27 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+@font-face {
+  font-family: 'AboutFront';
+  src: url('/fonts/about-front.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-aboutfront {
+  font-family: 'AboutFront', cursive;
 }

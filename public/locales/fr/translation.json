@@ -12,12 +12,12 @@
     },
     "about": {
         "pageTitle": "Mon Chemin vers l'Éclat",
-        "p1": "C'est pendant le confinement que j'ai découvert ma véritable vocation : le bien-être 🌱. Cette période a marqué un tournant dans ma vie, me poussant à aller plus loin et à publier, en février, un livre sur le bien-être naturel.",
-        "p2": "Mon parcours a commencé avec un CAP esthétique, puis je n'ai cessé de me former pour enrichir mes compétences. Facialiste, je me suis spécialisée dans les soins hydrafacial et j'ai obtenu ma certification en drainage lymphatique RENATA FRANCA. Ces pratiques, associées à ma formation approfondie en massage facial Kobido, me permettent d'offrir des soins adaptés et performants.",
-        "p3": "Aujourd'hui, je poursuis une formation en naturopathie pour compléter mon approche et vous accompagner sur le long terme vers un bien-être global.",
-        "quote": "Mon histoire, jalonnée de questionnements sur l'acceptation de soi, m'a permis de créer une approche unique du soin. Je suis profondément convaincue que la beauté et les soins peuvent transformer la vie des femmes.",
-        "p4": "C'est cette conviction qui m'a conduite à ouvrir, en septembre 2024, mon institut dédié exclusivement aux femmes, centré sur le drainage lymphatique et l'harmonisation du corps et de l'esprit.",
-        "p5": "Bienvenue dans mon espace, dédié à la redécouverte de votre éclat naturel et de votre bien-être holistique. Reconnectons-nous à votre essentiel grâce à une expertise et des soins personnalisés, alliant sagesse ancestrale et techniques modernes pour une expérience unique. ✨"
+        "p1": "Je suis facialiste, praticienne en drainage lymphatique et coach skincare, mais avant tout, je suis une femme qui a traversé un chemin de réconciliation avec elle-même. Plus jeune, j'ai été complexée par ma peau, j'ai cru devoir me décaper pour être acceptée. Cette période m'a profondément marquée. 🪞",
+        "p2": "Avec le temps, j'ai compris que la vraie beauté ne se trouve pas dans le regard des autres, mais dans l'alignement entre ce que l'on est à l'intérieur et ce que l'on exprime à l'extérieur. La beauté, c'est une reconnexion à soi, une vérité qu'on incarne sans masque, sans faux-semblants. 🧘🏿‍♀️",
+        "p3": "Aujourd'hui, je suis guidée par une approche holistique, à la fois spirituelle et ancrée dans le soin du corps. J'accompagne celles et ceux qui souhaitent retrouver une beauté qui leur ressemble, qui fait du bien, qui libère. Mon rôle est de vous aider à prendre soin de votre peau, de votre énergie, et de votre être, pour que vous puissiez vous sentir pleinement vous-même, aligné(e) et rayonnant(e). 🌸",
+        "quote": "",
+        "p4": "",
+        "p5": ""
     },
     "services": {
         "welcome": "Terres d'éclat : Un retour à l'essentiel",
@@ -90,9 +90,9 @@
         "viewAll": "Voir Tous les Services"
     },
     "footer": {
-        "copyright": "© {{year}} Terres d'éclats. Tous droits réservés.",
+        "copyright": "© {{year}} Terres d'éclat. Tous droits réservés.",
         "slogan": "Révélez votre éclat. Un retour à l'essentiel.",
-        "credit": "Made with Love ❤️ By Don Lorenzo.",
+        "credit": "Made with Love 🤎 By Don Lorenzo.",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation"
     },

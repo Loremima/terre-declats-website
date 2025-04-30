@@ -1,0 +1,118 @@
+{
+    "navbar": {
+        "about": "Sobre",
+        "treatments": "Tratamentos",
+        "contact": "Contato",
+        "bookNow": "Reservar"
+    },
+    "hero": {
+        "subtitle": "Um retorno ao essencial",
+        "title": "Realce Sua Pele",
+        "button": "Encontre Seu Tratamento"
+    },
+    "about": {
+        "pageTitle": "Meu Caminho para o Brilho",
+        "p1": "Sou facialista, praticante de drenagem linfática e coach de skincare, mas acima de tudo, sou uma mulher que trilhou um caminho de reconciliação consigo mesma. Quando mais jovem, era complexada pela minha pele, achei que precisava me esfolar para ser aceita. Esse período me marcou profundamente. 🪞",
+        "p2": "Com o tempo, entendi que a verdadeira beleza não está no olhar dos outros, mas no alinhamento entre o que somos por dentro e o que expressamos por fora. A beleza é uma reconexão consigo mesma, uma verdade que incorporamos sem máscaras, sem disfarces. 🧘🏿‍♀️",
+        "p3": "Hoje, sou guiada por uma abordagem holística, tanto espiritual quanto ancorada no cuidado do corpo. Acompanho aqueles que desejam reencontrar uma beleza que lhes pertence, que faz bem, que liberta. Meu papel é ajudar você a cuidar da sua pele, da sua energia e do seu ser, para que possa se sentir plenamente você mesma, alinhada e radiante. 🌸",
+        "quote": "",
+        "p4": "",
+        "p5": ""
+    },
+    "services": {
+        "welcome": "Terres d'éclat: Um retorno ao essencial",
+        "sectionTitle": "REVELE SEU BRILHO",
+        "intro": "Entre em um santuário dedicado ao seu brilho e à reconexão consigo mesma. Nosso espaço é especializado em tratamentos personalizados de alta performance, projetados para oferecer resultados visíveis e uma profunda regeneração.",
+        "cardIndividual": {
+            "title": "Tratamentos Personalizados",
+            "description": "Assinatura Kobido, drenagem linfática, coaching de skincare sob medida, aulas de automassagem... Revele seu brilho único com nossos acompanhamentos personalizados.",
+            "button": "Explorar Tratamentos"
+        },
+        "cardProfessional": {
+            "title": "Serviços Profissionais",
+            "description": "Valorize sua marca ou estabelecimento. Workshops de bem-estar, treinamento de equipes, eventos pop-up, criação de tratamentos exclusivos para hotéis, spas e empresas.",
+            "button": "Discutir um Projeto"
+        },
+        "cardHolistic": {
+            "title": "Consultas Sob Medida",
+            "description": "Receba orientações de especialista feitas para você. Obtenha rotinas de cuidados com a pele, recomendações de produtos e dicas personalizadas para atingir seus objetivos de pele.",
+            "button": "Reservar uma Consulta"
+        }
+    },
+    "glow_era": {
+        "title": "Bem-vinda à sua era do glow",
+        "intro": "É hora de revelar seu brilho interior e se reconectar consigo mesma! Nosso refúgio oferece tratamentos personalizados por mãos experientes, combinando técnicas avançadas e produtos naturais para deixá-la radiante, revigorada e reequilibrada.",
+        "button": "Reservar um Tratamento"
+    },
+    "bestsellers": {
+        "title": "NOSSOS TRATAMENTOS ASSINATURA",
+        "item1": {
+            "name": "Hydrafacial Assinatura",
+            "desc": "Um tratamento de brilho instantâneo que limpa, hidrata e revitaliza profundamente — a aliança perfeita entre tecnologia e natureza."
+        },
+        "item2": {
+            "name": "Tratamento Anti-Idade Assinatura",
+            "desc": "Devolva à sua pele toda a sua juventude com um tratamento lifting, suavizante e iluminador, adaptado às suas necessidades."
+        },
+        "item3": {
+            "name": "Gua Sha Super Lift",
+            "desc": "Inspirado na tradição, este tratamento firma e esculpe o rosto para um efeito lifting imediato, com suavidade."
+        },
+        "item4": {
+            "name": "Lift & Sculpt Corporal",
+            "desc": "Uma massagem profunda que relaxa, estimula a circulação e redefine a silhueta com precisão e gentileza."
+        },
+        "item5": {
+            "name": "Massagem Bucal",
+            "desc": "Uma técnica rara e direcionada, praticada dentro da boca para liberar tensões, realçar os traços e despertar o brilho."
+        },
+        "itemKobido": {
+            "name": "Tratamento Lifting Kobido",
+            "desc": "Redesenhe o contorno do seu rosto com este lifting natural. Uma massagem japonesa ancestral que drena, suaviza e revitaliza para um relaxamento profundo e um brilho visível."
+        },
+        "itemDrainage": {
+            "name": "Drenagem Harmonia Corporal",
+            "desc": "Recupere leveza e bem-estar. Esta drenagem específica reativa a circulação linfática, diminui a retenção de líquidos, alivia o inchaço e acalma o estresse. *Aconselhamento médico necessário em caso de patologia.*"
+        },
+        "itemCourse": {
+            "name": "Masterclass Automassagem Facial (Vídeo)",
+            "desc": "Revele o potencial da sua pele em casa! Aprenda gestos de automassagem personalizados inspirados no Kobido e na drenagem linfática (sessão de vídeo de 45min)."
+        },
+        "itemRoutine": {
+            "name": "Seu Ritual de Beleza Sob Medida",
+            "desc": "Não procure mais, brilhe. Receba sua rotina de cuidados completa e personalizada, adaptada à sua pele e ao seu ritmo de vida (consulta por vídeo €30)."
+        },
+        "itemShopping": {
+            "name": "Coaching Glow Up: Ritual + Compras",
+            "desc": "O coaching definitivo para transformar sua pele! Análise detalhada, rotina personalizada, seleção de produtos adequados (respeitando o orçamento!), e domínio dos gestos de aplicação. (1h - €45)"
+        },
+        "learnMore": "Reservar",
+        "viewAll": "Ver Todos os Serviços"
+    },
+    "footer": {
+        "copyright": "© {{year}} Terres d'éclat. Todos os direitos reservados.",
+        "slogan": "Revele seu brilho. Um retorno ao essencial.",
+        "credit": "Made with Love 🤎 By Don Lorenzo.",
+        "privacy": "Política de Privacidade",
+        "terms": "Termos de Uso"
+    },
+    "legal": {
+        "privacyTitle": "Política de Privacidade",
+        "termsTitle": "Termos de Uso",
+        "lastUpdated": "Última atualização: {{date}}",
+        "placeholderPrivacy": "[O conteúdo da sua Política de Privacidade entra aqui. Por favor, consulte recursos legais...]",
+        "placeholderTerms": "[O conteúdo dos seus Termos de Uso entra aqui. Por favor, consulte recursos legais...]",
+        "contactPrompt": "Se você tiver dúvidas sobre esta política, entre em contato conosco em:",
+        "genericDisclaimer": "**Aviso:** Este é um modelo genérico... Por favor, consulte um profissional jurídico."
+    },
+    "contactPage": {
+        "title": "Entre em Contato",
+        "intro": "Tem uma pergunta, uma ideia de projeto, ou apenas quer dizer olá? Adoraria conversar com você. Entre em contato por email ou me encontre no Instagram.",
+        "emailCardTitle": "Por Email",
+        "emailPrompt": "Envie sua mensagem diretamente para:",
+        "emailAddress": "terresdeclat@gmail.com",
+        "instagramCardTitle": "No Instagram",
+        "instagramPrompt": "Encontre inspiração e novidades:",
+        "instagramHandle": "@terresdeclat_"
+    }
+}

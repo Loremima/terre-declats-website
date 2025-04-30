@@ -43,7 +43,7 @@ const AboutPage: React.FC = () => {
     return (
         // Main container with base background and padding
         <motion.div
-            className="bg-[#f6f1e7] text-black pt-24 md:pt-32 pb-16 md:pb-24" // Removed min-height, sections will define height
+            className="bg-[#f6f1e7] text-black pt-24 md:pt-32"
             variants={pageVariants}
             initial="hidden"
             animate="visible"
@@ -69,7 +69,7 @@ const AboutPage: React.FC = () => {
             >
                 {/* Image Column */}
                 <motion.div
-                    className="order-2 md:order-1 h-[450px] md:h-[600px] lg:h-[700px] border-black md:border-r" // Adjusted height
+                    className="order-2 md:order-1 h-[450px] md:h-[500px] lg:h-[600px] border-black md:border-r" // Unified height
                     variants={imageVariants} // Apply image animation variant
                 >
                     <img
@@ -79,19 +79,16 @@ const AboutPage: React.FC = () => {
                     />
                 </motion.div>
                 {/* Text Column */}
-                <div className="order-1 md:order-2 flex items-center justify-center p-8 md:p-16 lg:p-24 bg-[#f6f1e7]">
+                <div className="order-1 md:order-2 flex items-center justify-center p-8 md:p-12 lg:p-16 bg-[#f6f1e7]">
                     <motion.div
-                        className="space-y-6 text-base md:text-lg leading-relaxed font-light max-w-md" // Adjusted leading
+                        className="space-y-6 text-base md:text-lg leading-relaxed font-light max-w-xl mx-auto px-4"
                         variants={textContainerVariants}
-                        initial="hidden" // Initial state for staggering
-                        animate="visible"   // Animate when parent is visible
+                        initial="hidden"
+                        animate="visible"
                     >
-                        <motion.p variants={paragraphVariants} className="italic">
+                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl font-aboutfront">
                             {t('about.p1')}
-                        </motion.p>
-                        <motion.p variants={paragraphVariants}>
-                            {t('about.p2')}
-                        </motion.p>
+                        </motion.blockquote>
                     </motion.div>
                 </div>
             </motion.div>
@@ -105,31 +102,25 @@ const AboutPage: React.FC = () => {
                 viewport={{ once: true, amount: 0.2 }}
             >
                 {/* Text Column */}
-                <div className="order-1 md:order-1 flex items-center justify-center p-8 md:p-16 lg:p-24 bg-[#f6f1e7]">
+                <div className="order-1 md:order-1 flex items-center justify-center p-8 md:p-12 lg:p-16 bg-[#f6f1e7]">
                     <motion.div
-                        className="space-y-6 text-base md:text-lg leading-relaxed font-light max-w-md"
+                        className="space-y-6 text-base md:text-lg leading-relaxed font-light max-w-xl mx-auto px-4"
                         variants={textContainerVariants}
                         initial="hidden"
                         animate="visible"
                     >
-                        <motion.p variants={paragraphVariants}>
-                            {t('about.p3')}
-                        </motion.p>
-                        <motion.blockquote
-                            className="border-l-2 border-black/40 pl-6 py-2 my-6 italic text-black/80" // Adjusted margin
-                            variants={paragraphVariants}
-                        >
-                            {t('about.quote')}
+                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl font-aboutfront">
+                            {t('about.p2')}
                         </motion.blockquote>
                     </motion.div>
                 </div>
                 {/* Image Column */}
                 <motion.div
-                    className="order-2 md:order-2 h-[450px] md:h-[500px] lg:h-[600px] border-black md:border-l" // Different height for variety
+                    className="order-2 md:order-2 h-[450px] md:h-[500px] lg:h-[600px] border-black md:border-l"
                     variants={imageVariants}
                 >
                     <img
-                        src="/images/leaf.jpg" // Using a different image
+                        src="/images/leaf.jpg"
                         alt="Facial treatment detail"
                         className="w-full h-full object-cover"
                     />
@@ -138,7 +129,7 @@ const AboutPage: React.FC = () => {
 
             {/* Section 3: Image Left, Text Right */}
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 border-t border-b border-black" // Added border-b
+                className="grid grid-cols-1 md:grid-cols-2 border-t border-b border-black"
                 variants={contentBlockVariants}
                 initial="hidden"
                 whileInView="visible"
@@ -150,26 +141,24 @@ const AboutPage: React.FC = () => {
                     variants={imageVariants}
                 >
                     <img
-                        src="/images/spa.jpg" // Another different image
+                        src="/images/spa.jpg"
                         alt="Body treatment products"
                         className="w-full h-full object-cover"
                     />
                 </motion.div>
                 {/* Text Column */}
-                <div className="order-1 md:order-2 flex items-center justify-center p-8 md:p-16 lg:p-24 bg-[#f6f1e7]">
+                <div className="order-1 md:order-2 flex flex-col justify-between h-full p-8 bg-[#f6f1e7]">
                     <motion.div
-                        className="space-y-6 text-base md:text-lg leading-relaxed font-light max-w-md"
+                        className="flex-1 flex flex-col justify-center space-y-6 text-base md:text-lg leading-relaxed font-light max-w-xl mx-auto px-4"
                         variants={textContainerVariants}
                         initial="hidden"
                         animate="visible"
                     >
-                        <motion.p variants={paragraphVariants}>
-                            {t('about.p4')}
-                        </motion.p>
-                        <motion.p variants={paragraphVariants} className="pt-2 font-medium"> {/* Adjusted padding */}
-                            {t('about.p5')}
-                        </motion.p>
+                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl font-aboutfront">
+                            {t('about.p3')}
+                        </motion.blockquote>
                     </motion.div>
+                    <div className="flex-shrink-0" />
                 </div>
             </motion.div>
 

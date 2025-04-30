@@ -86,7 +86,7 @@ const AboutPage: React.FC = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl font-aboutfront">
+                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl">
                             {t('about.p1')}
                         </motion.blockquote>
                     </motion.div>
@@ -109,7 +109,7 @@ const AboutPage: React.FC = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl font-aboutfront">
+                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl">
                             {t('about.p2')}
                         </motion.blockquote>
                     </motion.div>
@@ -154,7 +154,7 @@ const AboutPage: React.FC = () => {
                         initial="hidden"
                         animate="visible"
                     >
-                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl font-aboutfront">
+                        <motion.blockquote variants={paragraphVariants} className="pl-2 text-black/80 bg-[#e0d8c5] py-4 rounded-md shadow-sm text-base md:text-lg lg:text-xl xl:text-2xl">
                             {t('about.p3')}
                         </motion.blockquote>
                     </motion.div>

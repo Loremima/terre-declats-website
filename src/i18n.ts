@@ -16,8 +16,8 @@ i18n
     // for all options read: https://www.i18next.com/overview/configuration-options
     .init({
         supportedLngs: ['en', 'fr', 'pt'],
-        fallbackLng: 'fr', // Use English if detected language is not available
-        debug: import.meta.env.DEV, // Enable debug output in development
+        fallbackLng: 'fr',
+        debug: import.meta.env.DEV,
 
         detection: {
             // Order and from where user language should be detected

@@ -71,20 +71,20 @@
             "desc": "Redesenhe o contorno do seu rosto com este lifting natural. Uma massagem japonesa ancestral que drena, suaviza e revitaliza para um relaxamento profundo e um brilho visível."
         },
         "itemDrainage": {
-            "name": "Drenagem Harmonia Corporal",
+            "name": "Drenagem Linfática Corporal",
             "desc": "Recupere leveza e bem-estar. Esta drenagem específica reativa a circulação linfática, diminui a retenção de líquidos, alivia o inchaço e acalma o estresse. *Aconselhamento médico necessário em caso de patologia.*"
         },
         "itemCourse": {
-            "name": "Masterclass Automassagem Facial (Vídeo)",
+            "name": "Masterclass Automassagem Facial",
             "desc": "Revele o potencial da sua pele em casa! Aprenda gestos de automassagem personalizados inspirados no Kobido e na drenagem linfática (sessão de vídeo de 45min)."
         },
         "itemRoutine": {
             "name": "Seu Ritual de Beleza Sob Medida",
-            "desc": "Não procure mais, brilhe. Receba sua rotina de cuidados completa e personalizada, adaptada à sua pele e ao seu ritmo de vida (consulta por vídeo €30)."
+            "desc": "Não procure mais, brilhe. Receba sua rotina de cuidados completa e personalizada, adaptada à sua pele e ao seu ritmo de vida (consulta por vídeo)."
         },
         "itemShopping": {
             "name": "Coaching Glow Up: Ritual + Compras",
-            "desc": "O coaching definitivo para transformar sua pele! Análise detalhada, rotina personalizada, seleção de produtos adequados (respeitando o orçamento!), e domínio dos gestos de aplicação. (1h - €45)"
+            "desc": "O coaching definitivo para transformar sua pele! Análise detalhada, rotina personalizada, seleção de produtos adequados (respeitando o orçamento!), e domínio dos gestos de aplicação.)"
         },
         "learnMore": "Reservar",
         "viewAll": "Ver Todos os Serviços"

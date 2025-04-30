@@ -51,7 +51,7 @@
             "desc": "Rediscover youthful contours with this natural facelift massage. Ancient Japanese techniques lift, drain, and revitalize for deep relaxation and visible radiance."
         },
         "itemDrainage": {
-            "name": "Body Harmony Drainage",
+            "name": "Lymphatic drainage",
             "desc": "Feel lighter and refreshed. This specialized massage boosts lymphatic flow to reduce water retention, ease bloating, and melt away stress. *Consult your doctor for specific health conditions.*"
         },
         "itemCourse": {
@@ -60,11 +60,11 @@
         },
         "itemRoutine": {
             "name": "Your Personalized Skin Ritual",
-            "desc": "Stop guessing, start glowing. Get a complete, tailor-made skincare routine designed for your unique skin and lifestyle via a 30€ video consultation."
+            "desc": "Stop guessing, start glowing. Get a complete, tailor-made skincare routine designed for your unique skin and lifestyle via video consultation."
         },
         "itemShopping": {
             "name": "Glow Up: Ritual + Shopping Guide",
-            "desc": "The ultimate skin transformation package! Includes in-depth analysis, bespoke routine, curated product picks (budget-friendly!), and application mastery. (1h - 45€)"
+            "desc": "The ultimate skin transformation package! Includes in-depth analysis, bespoke routine, curated product picks (budget-friendly!), and application mastery."
         },
         "learnMore": "Book Now",
         "viewAll": "View All Services"

@@ -3,12 +3,12 @@
         "about": "À Propos",
         "treatments": "Soins",
         "contact": "Contact",
-        "bookNow": "Réserver"
+        "bookNow": "Réservez"
     },
     "hero": {
         "subtitle": "Un retour à l'essentiel",
         "title": "Sublimez Votre Peau",
-        "button": "Trouver Votre Soin"
+        "button": "Trouvez Votre Soin"
     },
     "about": {
         "pageTitle": "Mon Chemin vers l'Éclat",
@@ -26,23 +26,23 @@
         "cardIndividual": {
             "title": "Soins Personnalisés",
             "description": "Soin Kobido signature, drainage lymphatique, coaching skincare sur-mesure, cours d'auto-massage... Révélez votre éclat unique grâce à nos accompagnements personnalisés.",
-            "button": "Explorer les Soins"
+            "button": "Explorez les Soins"
         },
         "cardProfessional": {
             "title": "Services Professionnels",
             "description": "Valorisez votre marque ou établissement. Ateliers bien-être, formation d'équipes, événements pop-up, création de soins signatures pour hôtels, spas et entreprises.",
-            "button": "Discuter d'un Projet"
+            "button": "Discutez d'un Projet"
         },
         "cardHolistic": {
             "title": "Consultations Sur-Mesure",
             "description": "Recevez des conseils d'experte conçus pour vous. Obtenez routines de soins, recommandations produits et astuces personnalisées pour atteindre vos objectifs peau.",
-            "button": "Réserver une Consultation"
+            "button": "Réservez une Consultation"
         }
     },
     "glow_era": {
         "title": "Bienvenue dans votre ère du glow",
         "intro": "Il est temps de révéler votre éclat intérieur et de vous reconnecter à vous-même ! Notre cocon propose des soins personnalisés par des mains expertes, alliant techniques pointues et produits naturels pour vous laisser rayonnant·e, ressourcé·e et rééquilibré·e.",
-        "button": "Réserver un Soin"
+        "button": "Réservez un Soin"
     },
     "bestsellers": {
         "title": "NOS SOINS SIGNATURES",
@@ -71,22 +71,22 @@
             "desc": "Redessinez l'ovale de votre visage avec ce lifting naturel. Un massage japonais ancestral qui draine, lisse et revitalise pour une relaxation profonde et un éclat visible."
         },
         "itemDrainage": {
-            "name": "Drainage Harmonie du Corps",
+            "name": "Drainage lymphatique corps",
             "desc": "Retrouvez légèreté et bien-être. Ce drainage spécifique relance la circulation lymphatique, diminue la rétention d'eau, soulage les ballonnements et apaise le stress. *Avis médical requis si pathologie.*"
         },
         "itemCourse": {
-            "name": "Masterclass Auto-Massage Visage (Visio)",
-            "desc": "Révélez le potentiel de votre peau chez vous ! Apprenez des gestes d'auto-massage personnalisés inspirés du Kobido et du drainage lymphatique (session visio 45min)."
+            "name": "Masterclass Auto-Massage Visage",
+            "desc": "Révélez le potentiel de votre peau chez vous ! Apprenez des gestes d'auto-massage personnalisés inspirés du Kobido et du drainage lymphatique (Visio)."
         },
         "itemRoutine": {
             "name": "Votre Rituel Beauté Sur-Mesure",
-            "desc": "Ne cherchez plus, rayonnez. Recevez votre routine de soins complète et personnalisée, adaptée à votre peau et votre rythme de vie (visio-consultation 30€)."
+            "desc": "Ne cherchez plus, rayonnez. Recevez votre routine de soins complète et personnalisée, adaptée à votre peau et votre rythme de vie (Visio)."
         },
         "itemShopping": {
             "name": "Coaching Glow Up : Rituel + Shopping",
-            "desc": "Le coaching ultime pour transformer votre peau ! Analyse pointue, routine personnalisée, sélection de produits adaptés (budget respecté !), et gestes d'application maîtrisés. (1h - 45€)"
+            "desc": "Le coaching ultime pour transformer votre peau ! Analyse pointue, routine personnalisée, sélection de produits adaptés (budget respecté !), et gestes d'application maîtrisés."
         },
-        "learnMore": "Réserver",
+        "learnMore": "Réservez",
         "viewAll": "Voir Tous les Services"
     },
     "footer": {

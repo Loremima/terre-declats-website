@@ -11,11 +11,6 @@ const Footer: React.FC = () => {
         <footer id="contact-section" className="bg-[#f6f1e7] text-black py-8 md:py-12 border-t border-black/20">
             <div className="container mx-auto px-4 lg:px-12 text-center">
 
-                {/* Slogan */}
-                <p className="text-xs font-light mb-4 italic opacity-80">
-                    {t('footer.slogan')}
-                </p>
-
                 {/* Copyright */}
                 <p className="text-xs font-light mb-4">
                     {t('footer.copyright', { year: currentYear })}

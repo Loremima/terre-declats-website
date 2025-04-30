@@ -59,7 +59,6 @@ const Navbar: React.FC = () => {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
-    toggleMenu();
   };
 
   return (
@@ -170,16 +169,27 @@ const Navbar: React.FC = () => {
                 </RouterLink>
               </motion.div>
               <motion.div variants={linkItemVariants}>
-                <ScrollLink
-                  to="welcome-section"
-                  smooth={true}
-                  duration={1000}
-                  offset={-50}
-                  className={overlayLinkClasses + " cursor-pointer"}
-                  onClick={toggleMenu}
-                >
-                  {t('navbar.treatments')}
-                </ScrollLink>
+                {location.pathname === '/' ? (
+                  <ScrollLink
+                    to="welcome-section"
+                    smooth={true}
+                    duration={1000}
+                    offset={-50}
+                    className={overlayLinkClasses + " cursor-pointer"}
+                    onClick={toggleMenu}
+                  >
+                    {t('navbar.treatments')}
+                  </ScrollLink>
+                ) : (
+                  <RouterLink
+                    to="/"
+                    state={{ scrollTo: 'welcome-section' }}
+                    className={overlayLinkClasses + " cursor-pointer"}
+                    onClick={toggleMenu}
+                  >
+                    {t('navbar.treatments')}
+                  </RouterLink>
+                )}
               </motion.div>
               <motion.div variants={linkItemVariants}>
                 <RouterLink

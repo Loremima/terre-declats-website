@@ -82,6 +82,7 @@ const BestsellersSection: React.FC = () => {
 
   return (
     <motion.section
+      id="bestsellers-section"
       className="border-t border-black"
       variants={sectionVariants}
       initial="hidden"

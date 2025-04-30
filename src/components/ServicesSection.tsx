@@ -35,7 +35,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, imageUrl, but
                 to={scrollToId}
                 smooth={true}
                 duration={1000}
-                offset={-80}
+                offset={-60}
                 className={`${buttonBaseClasses} ${buttonClasses} cursor-pointer`}
               >
                 {buttonText}
